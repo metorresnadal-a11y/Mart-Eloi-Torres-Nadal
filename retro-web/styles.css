@@ -1,0 +1,240 @@
+/* ============================
+   Fonts locals
+============================ */
+@font-face {
+  font-family: 'Press Start 2P';
+  src: url('fonts/PressStart2P-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'VT323';
+  src: url('fonts/VT323-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ============================
+   Variables de color
+============================ */
+:root {
+  --bg-dark: #0a0f1f;
+  --bg-darker: #070a16;
+  --text: #e6eefc;
+  --text-dim: #b6c5e3;
+  --neon-cyan: #00eaff;
+  --neon-magenta: #ff2bd6;
+  --neon-yellow: #ffe138;
+}
+
+/* ============================
+   Reset bàsic
+============================ */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+img { max-width: 100%; display: block; }
+
+/* ============================
+   Tipografia i cos
+============================ */
+body {
+  background: linear-gradient(180deg, var(--bg-dark), var(--bg-darker));
+  color: var(--text);
+  font-family: "VT323", monospace;
+  line-height: 1.6;
+}
+
+/* ============================
+   Capçalera i navegació
+============================ */
+.site-header {
+  text-align: center;
+  padding: 1rem;
+}
+.logo {
+  font-family: "Press Start 2P", monospace;
+  color: var(--neon-cyan);
+}
+.logo span { color: var(--neon-magenta); }
+.site-title {
+  font-family: "Press Start 2P", monospace;
+  color: var(--neon-yellow);
+}
+.site-tagline { color: var(--text-dim); }
+
+.site-nav {
+  background: rgba(7,10,22,0.8);
+  text-align: center;
+}
+.site-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.site-nav a {
+  font-family: "Press Start 2P", monospace;
+  color: var(--text);
+  text-decoration: none;
+}
+.site-nav a:hover { color: var(--neon-cyan); }
+
+/* ============================
+   Hero (portada general)
+============================ */
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url("img/arcade.jpg") center/cover no-repeat;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+.hero-overlay {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 1rem;
+}
+.hero-title {
+  font-family: "Press Start 2P", monospace;
+  font-size: 1.2rem;
+  color: var(--neon-cyan);
+  text-shadow: 0 0 8px var(--neon-cyan);
+  animation: neon-blink 3s infinite;
+}
+.hero-subtitle {
+  margin: 1rem auto;
+  max-width: 600px;
+  color: #ddd;
+}
+.hero-button {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  background: var(--neon-magenta);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-family: "Press Start 2P", monospace;
+  box-shadow: 0 0 10px var(--neon-magenta);
+  animation: glow-pulse 2.8s infinite;
+}
+.hero-button:hover {
+  background: var(--neon-yellow);
+  color: #000;
+  box-shadow: 0 0 10px var(--neon-yellow);
+}
+
+/* ============================
+   Hero especial per a INDEX (fons GIF)
+============================ */
+.hero.index {
+  background: url("img/arcade-bg.gif") center/cover no-repeat;
+}
+
+/* ============================
+   Contingut principal
+============================ */
+.content {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+.content h3 {
+  font-family: "Press Start 2P", monospace;
+  color: var(--neon-yellow);
+}
+.content p { color: var(--text-dim); }
+
+/* ============================
+   Galeria
+============================ */
+.gallery h3 {
+  font-family: "Press Start 2P", monospace;
+  color: var(--neon-magenta);
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+.card img { transition: transform 0.3s ease; }
+.card:hover img { transform: scale(1.05); }
+.card figcaption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  color: #fff;
+  background: linear-gradient(180deg, transparent, rgba(0,0,0,0.7));
+  text-align: center;
+}
+
+/* ============================
+   Desplegables (arcade)
+============================ */
+.arcade {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+.arcade h2 {
+  font-family: "Press Start 2P", monospace;
+  color: var(--neon-cyan);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+details {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+summary {
+  font-family: "Press Start 2P", monospace;
+  font-size: 1rem;
+  color: var(--neon-yellow);
+  outline: none;
+}
+details[open] {
+  box-shadow: 0 0 10px var(--neon-magenta);
+}
+details p {
+  color: var(--text-dim);
+  margin: 0.5rem 0;
+}
+details img {
+  margin-top: 0.5rem;
+  border-radius: 6px;
+}
+
+/* ============================
+   Animacions
+============================ */
+@keyframes neon-blink {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% { opacity: 1; }
+  20%, 24%, 55% { opacity: 0.5; }
+}
+@keyframes glow-pulse {
+  0% { box-shadow: 0 0 10px var(--neon-magenta); }
+  50% { box-shadow: 0 0 20px var(--neon-magenta); }
+  100% { box-shadow: 0 0 10px var(--neon-magenta); }
+}
