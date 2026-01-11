@@ -2,16 +2,29 @@
 <html lang="ca">
 <head>
   <meta charset="utf-8">
-  <title>Galeria Retro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RetroGames — Galeria</title>
+
   <link rel="stylesheet" href="styles.css">
+
+  <meta name="description" content="Explora els diferents apartats de la cultura dels videojocs retro: cartutxos, consoles, arcade, revistes i comandaments.">
 </head>
+
 <body>
+
+  <!-- Capa de personatges retro -->
+  <div id="retro-characters-layer"></div>
+
+  <!-- Capçalera -->
   <header class="site-header">
     <div class="logo">RETRO<span>GAMES</span></div>
     <h1 class="site-title">Galeria Retro</h1>
-    <p class="site-tagline">Explora els diferents apartats de la cultura retro.</p>
+    <p class="site-tagline">
+      Un recorregut visual pels elements que han definit dècades de cultura del videojoc.
+    </p>
   </header>
 
+  <!-- Navegació -->
   <nav class="site-nav">
     <ul>
       <li><a href="index.html">Inici</a></li>
@@ -23,20 +36,99 @@
     </ul>
   </nav>
 
+  <!-- HERO -->
+  <section class="hero" style="background-image:url('img/galeria.gif');">
+    <div class="hero-overlay">
+      <h2 class="hero-title">Explora la cultura retro</h2>
+      <p class="hero-subtitle">
+        Cartutxos, consoles, revistes, arcade i molt més. Una mirada global a l’univers del videojoc clàssic.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contingut -->
   <main class="content">
-    <h2>Tria un apartat</h2>
-    <p>La galeria retro es divideix en seccions específiques per aprofundir en cada element.</p>
+    <h3>Tria un apartat</h3>
+    <p>
+      Aquesta galeria reuneix els principals pilars de la cultura retro. Cada secció ofereix una visió 
+      detallada del seu paper en la història del videojoc, des dels primers formats físics fins a les 
+      icòniques màquines arcade que van marcar generacions.
+    </p>
+
+    <!-- DESPLEGABLES INTEGRATS -->
     <ul class="link-list">
-      <li><a class="link-badge" href="cartutxos.html">Cartutxos</a></li>
-      <li><a class="link-badge" href="consoles.html">Consoles</a></li>
-      <li><a class="link-badge" href="arcade.html">Arcade</a></li>
-      <li><a class="link-badge" href="revistes.html">Revistes</a></li>
-      <li><a class="link-badge" href="comandaments.html">Comandaments</a></li>
+
+      <li class="dropdown-item">
+        <a class="link-badge toggle-info">Cartutxos</a>
+        <div class="info-box">
+          <p>
+            Els cartutxos van ser el format dominant dels videojocs durant més de dues dècades. 
+            Eren ràpids, resistents i fàcils de produir, i en versions més avançades permetien 
+            fins i tot guardar dades. Consoles com la NES, SNES, Mega Drive o Atari 2600 
+            depenien completament d’aquest sistema.
+          </p>
+          <a href="cartutxos.html" class="more-link">Veure més →</a>
+        </div>
+      </li>
+
+      <li class="dropdown-item">
+        <a class="link-badge toggle-info">Consoles</a>
+        <div class="info-box">
+          <p>
+            Des de les primeres consoles domèstiques fins a les generacions de 16 bits, 
+            cada màquina va aportar innovacions decisives: millores gràfiques, so més avançat, 
+            nous comandaments i experiències que van transformar la manera de jugar.
+          </p>
+          <a href="consoles.html" class="more-link">Veure més →</a>
+        </div>
+      </li>
+
+      <li class="dropdown-item">
+        <a class="link-badge toggle-info">Arcade</a>
+        <div class="info-box">
+          <p>
+            Les màquines arcade van ser el bressol de molts clàssics. A les sales recreatives, 
+            els jugadors competien per aconseguir puntuacions mítiques en jocs com Pac-Man, 
+            Donkey Kong, Street Fighter o Space Invaders. Un espai social i competitiu únic.
+          </p>
+          <a href="arcade.html" class="more-link">Veure més →</a>
+        </div>
+      </li>
+
+      <li class="dropdown-item">
+        <a class="link-badge toggle-info">Revistes</a>
+        <div class="info-box">
+          <p>
+            Abans d’internet, les revistes especialitzades eren la font principal d’informació: 
+            trucs, guies, anàlisis, demos i pòsters. Publicacions com Hobby Consolas o Micromanía 
+            van marcar una generació sencera de jugadors i van crear comunitat.
+          </p>
+          <a href="revistes.html" class="more-link">Veure més →</a>
+        </div>
+      </li>
+
+      <li class="dropdown-item">
+        <a class="link-badge toggle-info">Comandaments</a>
+        <div class="info-box">
+          <p>
+            Els comandaments han evolucionat des de simples palanques i un sol botó 
+            fins a dissenys ergonòmics amb vibració, sticks analògics i sensors de moviment. 
+            Cada generació ha aportat noves formes d’interacció i control.
+          </p>
+          <a href="comandaments.html" class="more-link">Veure més →</a>
+        </div>
+      </li>
+
     </ul>
   </main>
 
+  <!-- Peu de pàgina -->
   <footer class="site-footer">
     <p>© 2025 — Videojocs Retro</p>
   </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
 </body>
 </html>

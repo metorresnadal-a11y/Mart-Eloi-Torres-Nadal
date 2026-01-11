@@ -2,17 +2,29 @@
 <html lang="ca">
 <head>
   <meta charset="utf-8">
-  <title>Consoles Retro</title>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RetroGames — Consoles</title>
+
   <link rel="stylesheet" href="styles.css">
+
+  <meta name="description" content="L'evolució de les consoles retro: Atari, NES, SEGA Mega Drive, Super Nintendo i PlayStation.">
 </head>
+
 <body>
+
+  <!-- Capa de personatges retro -->
+  <div id="retro-characters-layer"></div>
+
+  <!-- Capçalera -->
   <header class="site-header">
     <div class="logo">RETRO<span>GAMES</span></div>
     <h1 class="site-title">Consoles Retro</h1>
-    <p class="site-tagline">De l’Atari fins a la PlayStation.</p>
+    <p class="site-tagline">
+      De l’Atari fins a la PlayStation: una evolució que va transformar el món del videojoc.
+    </p>
   </header>
 
+  <!-- Navegació -->
   <nav class="site-nav">
     <ul>
       <li><a href="index.html">Inici</a></li>
@@ -24,32 +36,119 @@
     </ul>
   </nav>
 
+  <!-- HERO -->
+  <section class="hero" style="background-image:url('img/nes.jpg');">
+    <div class="hero-overlay">
+      <h2 class="hero-title">Consoles mítiques</h2>
+      <p class="hero-subtitle">
+        Atari, NES, Mega Drive, SNES i PlayStation: els pilars de la història del videojoc.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contingut -->
   <main class="content">
+
+    <!-- DESPLEGABLES -->
+    <ul class="link-list">
+
+      <li class="dropdown-item">
+        <a class="link-badge toggle-info">Primera generació</a>
+        <div class="info-box">
+          <p>
+            Les primeres consoles, com la <strong>Magnavox Odyssey</strong>, van introduir el concepte de videojoc domèstic. 
+            Tot i els seus gràfics rudimentaris, van establir les bases d’una nova forma d’entreteniment 
+            que aviat es convertiria en un fenomen global.
+          </p>
+        </div>
+      </li>
+
+      <li class="dropdown-item">
+        <a class="link-badge toggle-info">Era de 8 bits</a>
+        <div class="info-box">
+          <p>
+            La <strong>NES</strong> i la <strong>Master System</strong> van marcar una revolució.  
+            Van definir gèneres com les plataformes, els RPG i els shooters, i van introduir sagues 
+            que encara avui són referents: Mario, Zelda, Metroid, Alex Kidd…
+          </p>
+        </div>
+      </li>
+
+      <li class="dropdown-item">
+        <a class="link-badge toggle-info">Era de 16 bits</a>
+        <div class="info-box">
+          <p>
+            La rivalitat entre <strong>SEGA Mega Drive</strong> i <strong>Super Nintendo</strong> va portar 
+            innovacions tècniques i artístiques. Aquesta època va donar vida a jocs llegendaris com 
+            Sonic, Super Mario World, Street Fighter II o Chrono Trigger.
+          </p>
+        </div>
+      </li>
+
+      <li class="dropdown-item">
+        <a class="link-badge toggle-info">Arribada del 3D</a>
+        <div class="info-box">
+          <p>
+            Amb la <strong>PlayStation</strong> i el CD-ROM, els videojocs van fer el salt definitiu al 3D.  
+            Aquesta transició va transformar completament la manera de jugar i va obrir la porta a 
+            experiències més cinematogràfiques i narratives.
+          </p>
+        </div>
+      </li>
+
+    </ul>
+
+    <!-- ARTICLE -->
     <article>
       <h3>Evolució de les consoles</h3>
       <p>
         Les consoles domèstiques van revolucionar la manera de jugar. Des de l’Atari 2600 fins a la NES, 
-        SEGA Mega Drive i la Super Nintendo, cada generació va aportar innovacions tècniques i culturals.
+        SEGA Mega Drive i la Super Nintendo, cada generació va aportar innovacions tècniques i culturals 
+        que van definir el futur del videojoc.
       </p>
       <p>
-        Als anys 90, Sony va entrar amb la PlayStation, introduint el CD-ROM i gràfics 3D, 
-        canviant per sempre la indústria.
+        Als anys 90, Sony va entrar amb força amb la PlayStation, introduint el CD-ROM i els gràfics 3D. 
+        Aquesta nova tecnologia va permetre mons més grans, històries més profundes i una experiència 
+        de joc completament renovada.
       </p>
     </article>
 
+    <!-- GALERIA -->
     <section class="gallery">
       <h3>Exemples icònics</h3>
+
       <div class="grid">
-        <figure class="card"><img src="img/nes.jpg" alt="NES"><figcaption>Nintendo Entertainment System</figcaption></figure>
-        <figure class="card"><img src="img/megadrive.jpg" alt="Mega Drive"><figcaption>SEGA Mega Drive</figcaption></figure>
-        <figure class="card"><img src="img/snes.jpg" alt="SNES"><figcaption>Super Nintendo</figcaption></figure>
-        <figure class="card"><img src="img/playstation.jpg" alt="PlayStation"><figcaption>Sony PlayStation</figcaption></figure>
+        <figure class="card">
+          <img src="img/nes.jpg" loading="lazy" alt="NES">
+          <figcaption>Nintendo Entertainment System</figcaption>
+        </figure>
+
+        <figure class="card">
+          <img src="img/megadrive.jpg" loading="lazy" alt="Mega Drive">
+          <figcaption>SEGA Mega Drive</figcaption>
+        </figure>
+
+        <figure class="card">
+          <img src="img/snes.jpg" loading="lazy" alt="SNES">
+          <figcaption>Super Nintendo</figcaption>
+        </figure>
+
+        <figure class="card">
+          <img src="img/playstation.jpg" loading="lazy" alt="PlayStation">
+          <figcaption>Sony PlayStation</figcaption>
+        </figure>
       </div>
     </section>
+
   </main>
 
+  <!-- Peu de pàgina -->
   <footer class="site-footer">
     <p>© 2025 — Videojocs Retro</p>
   </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
 </body>
 </html>

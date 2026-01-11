@@ -2,17 +2,113 @@
 <html lang="ca">
 <head>
   <meta charset="utf-8">
-  <title>L'era daurada dels videojocs retro</title>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RetroGames — Inici</title>
+
   <link rel="stylesheet" href="styles.css">
+
+  <meta name="description" content="Un recorregut complet per la història dels videojocs retro: consoles, jocs, cultura i evolució tecnològica.">
 </head>
+
 <body>
-  <section class="hero">
+
+  <!-- Capa de personatges retro -->
+  <div id="retro-characters-layer"></div>
+
+  <!-- Capçalera -->
+  <header class="site-header">
+    <div class="logo">RETRO<span>GAMES</span></div>
+    <h1 class="site-title">L'era daurada dels videojocs retro</h1>
+    <p class="site-tagline">
+      Un viatge per la història del videojoc, des dels primers arcades fins a les consoles que van marcar generacions.
+    </p>
+  </header>
+
+  <!-- Navegació -->
+  <nav class="site-nav">
+    <ul>
+      <li><a href="index.html" class="active">Inici</a></li>
+      <li><a href="galeria.html">Galeria</a></li>
+      <li><a href="cartutxos.html">Cartutxos</a></li>
+      <li><a href="consoles.html">Consoles</a></li>
+      <li><a href="arcade.html">Arcade</a></li>
+      <li><a href="revistes.html">Revistes</a></li>
+      <li><a href="comandaments.html">Comandaments</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" style="background-image:url('img/arcade-bg.gif');">
     <div class="hero-overlay">
-      <h1 class="hero-title">L'era daurada dels videojocs retro</h1>
-      <p class="hero-subtitle">Un viatge pels jocs i consoles que van donar forma a la història.</p>
-      <a href="galeria.html" class="hero-button">Explora</a>
+      <h2 class="hero-title">L'era daurada dels videojocs retro</h2>
+      <p class="hero-subtitle">
+        Una etapa clau en la història del lleure digital, marcada per la creativitat, la innovació i l'arribada de mites que encara perduren.
+      </p>
+      <a href="galeria.html" class="hero-button neon-pulse">Explora</a>
     </div>
   </section>
+
+  <!-- Timeline històric -->
+  <main class="content">
+    <h3>Línia del temps del videojoc</h3>
+    <p>
+      La història del videojoc és un reflex de l’evolució tecnològica i cultural de les darreres dècades. 
+      Des dels primers experiments electrònics dels anys 60 fins a l’explosió comercial dels 80 i 90, 
+      cada etapa ha aportat innovacions que han definit la manera com entenem el joc digital.
+    </p>
+    <p>
+      Aquesta línia del temps resumeix els moments més importants: el naixement de les primeres consoles, 
+      la crisi del 1983, la recuperació gràcies a Nintendo, l’arribada del 3D amb PlayStation i l’expansió global 
+      del videojoc com a fenomen cultural.
+    </p>
+
+    <!-- TIMELINE HTML INTEGRAT -->
+    <ul class="timeline-list">
+      <li class="timeline-item">
+        <div class="timeline-year">1972</div>
+        <h4 class="timeline-title">Pong</h4>
+        <p class="timeline-text">Naixement de l'era arcade.</p>
+      </li>
+
+      <li class="timeline-item">
+        <div class="timeline-year">1977</div>
+        <h4 class="timeline-title">Atari 2600</h4>
+        <p class="timeline-text">Popularitza els cartutxos intercanviables.</p>
+      </li>
+
+      <li class="timeline-item">
+        <div class="timeline-year">1983</div>
+        <h4 class="timeline-title">Crash del videojoc</h4>
+        <p class="timeline-text">Crisi per sobresaturació i baixa qualitat.</p>
+      </li>
+
+      <li class="timeline-item">
+        <div class="timeline-year">1985</div>
+        <h4 class="timeline-title">NES</h4>
+        <p class="timeline-text">Revitalitza la indústria amb Mario i Zelda.</p>
+      </li>
+
+      <li class="timeline-item">
+        <div class="timeline-year">1991</div>
+        <h4 class="timeline-title">Super Nintendo</h4>
+        <p class="timeline-text">Consolida els 16 bits.</p>
+      </li>
+
+      <li class="timeline-item">
+        <div class="timeline-year">1994</div>
+        <h4 class="timeline-title">PlayStation</h4>
+        <p class="timeline-text">Popularitza el CD-ROM i el 3D.</p>
+      </li>
+    </ul>
+  </main>
+
+  <!-- Peu de pàgina -->
+  <footer class="site-footer">
+    <p>© 2025 — Videojocs Retro</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
 </body>
 </html>

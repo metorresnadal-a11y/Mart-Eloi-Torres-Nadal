@@ -2,16 +2,29 @@
 <html lang="ca">
 <head>
   <meta charset="utf-8">
-  <title>Comandaments Retro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RetroGames — Comandaments</title>
+
   <link rel="stylesheet" href="styles.css">
+
+  <meta name="description" content="De joysticks a pads icònics: l'evolució dels comandaments de videojocs.">
 </head>
+
 <body>
+
+  <!-- Capa de personatges retro -->
+  <div id="retro-characters-layer"></div>
+
+  <!-- Capçalera -->
   <header class="site-header">
     <div class="logo">RETRO<span>GAMES</span></div>
     <h1 class="site-title">Comandaments Retro</h1>
-    <p class="site-tagline">De joysticks a pads icònics.</p>
+    <p class="site-tagline">
+      De joysticks rudimentaris a pads icònics que han definit generacions.
+    </p>
   </header>
 
+  <!-- Navegació -->
   <nav class="site-nav">
     <ul>
       <li><a href="index.html">Inici</a></li>
@@ -23,31 +36,104 @@
     </ul>
   </nav>
 
-  <section class="hero" style="background:url('img/joystick.jpg') center/cover no-repeat;">
+  <!-- HERO -->
+  <section class="hero" style="background-image:url('img/joystick.jpg');">
     <div class="hero-overlay">
       <h2 class="hero-title">Comandaments clàssics</h2>
-      <p class="hero-subtitle">Del joystick de l’Atari al DualShock de PlayStation.</p>
+      <p class="hero-subtitle">
+        Del joystick de l’Atari al revolucionari DualShock de PlayStation.
+      </p>
     </div>
   </section>
 
+  <!-- Contingut -->
   <main class="content">
+
+    <!-- DESPLEGABLES -->
+    <ul class="link-list">
+
+      <li class="dropdown-item">
+        <a class="link-badge toggle-info">Evolució del disseny</a>
+        <div class="info-box">
+          <p>
+            Els primers comandaments eren simples joysticks amb un sol botó, pensats per a jocs molt bàsics. 
+            Amb l’arribada de Nintendo i el seu <strong>D-Pad</strong>, el disseny va evolucionar cap a formes 
+            més ergonòmiques i funcionals. Amb el temps, s’hi van afegir més botons, vibració, sticks analògics 
+            i fins i tot sensors de moviment.
+          </p>
+        </div>
+      </li>
+
+      <li class="dropdown-item">
+        <a class="link-badge toggle-info">Comandaments icònics</a>
+        <div class="info-box">
+          <p>
+            Alguns comandaments han marcat un abans i un després en la història del videojoc:  
+            el joystick de l’Atari 2600, el comandament rectangular de la NES, el disseny de SEGA 
+            per a jocs de lluita i el <strong>DualShock</strong> de Sony, que va establir l’estàndard 
+            modern amb dos sticks analògics i vibració integrada.
+          </p>
+        </div>
+      </li>
+
+      <li class="dropdown-item">
+        <a class="link-badge toggle-info">Innovacions tècniques</a>
+        <div class="info-box">
+          <p>
+            La tecnologia dels comandaments ha avançat enormement: vibració, triggers progressius, 
+            detecció de moviment, connectivitat sense fils i retroalimentació hàptica.  
+            Aquestes innovacions han permès experiències de joc més immersives i precises.
+          </p>
+        </div>
+      </li>
+
+    </ul>
+
+    <!-- ARTICLE -->
     <article>
       <h3>Evolució dels comandaments</h3>
       <p>
         Els primers comandaments eren simples joysticks amb un sol botó. Amb el temps, 
         Nintendo va introduir el D-Pad, SEGA va afegir més botons, i Sony va revolucionar 
-        amb el DualShock i els sticks analògics.
+        el sector amb el DualShock i els sticks analògics.
       </p>
       <p>
         Cada disseny reflectia les necessitats dels jocs de la seva època, i molts s’han 
-        convertit en icones culturals.
+        convertit en icones culturals que encara avui inspiren nous dispositius.
       </p>
     </article>
 
+    <!-- GALERIA -->
     <section class="gallery">
       <h3>Exemples icònics</h3>
+
       <div class="grid">
-        <figure class="card"><img src="img/joystick.jpg" alt="Joystick Atari"><figcaption>Joystick Atari</figcaption></figure>
-        <figure class="card"><img src="img/nes_pad.jpg" alt="NES Pad"><figcaption>Comandament NES</figcaption></figure>
-        <figure class="card"><img src="img/dualshock.jpg" alt="DualShock"><figcaption>Sony DualShock</figcaption></figure>
+        <figure class="card">
+          <img src="img/joystick.jpg" loading="lazy" alt="Joystick Atari">
+          <figcaption>Joystick Atari</figcaption>
+        </figure>
+
+        <figure class="card">
+          <img src="img/nes_pad.jpg" loading="lazy" alt="Comandament NES">
+          <figcaption>Comandament NES</figcaption>
+        </figure>
+
+        <figure class="card">
+          <img src="img/dualshock.jpg" loading="lazy" alt="DualShock">
+          <figcaption>Sony DualShock</figcaption>
+        </figure>
       </div>
+    </section>
+
+  </main>
+
+  <!-- Peu de pàgina -->
+  <footer class="site-footer">
+    <p>© 2025 — Videojocs Retro</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>

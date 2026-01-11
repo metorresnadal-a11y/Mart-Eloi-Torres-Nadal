@@ -2,16 +2,29 @@
 <html lang="ca">
 <head>
   <meta charset="utf-8">
-  <title>Màquines Arcade</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RetroGames — Arcade</title>
+
   <link rel="stylesheet" href="styles.css">
+
+  <meta name="description" content="Descobreix la història de les màquines arcade i els jocs que van marcar generacions: Pac-Man, Space Invaders, Street Fighter II.">
 </head>
+
 <body>
+
+  <!-- Capa de personatges retro -->
+  <div id="retro-characters-layer"></div>
+
+  <!-- Capçalera -->
   <header class="site-header">
     <div class="logo">RETRO<span>GAMES</span></div>
     <h1 class="site-title">Màquines Arcade</h1>
-    <p class="site-tagline">Les sales recreatives que van definir una era.</p>
+    <p class="site-tagline">
+      Les sales recreatives que van definir una era i van donar vida a mites del videojoc.
+    </p>
   </header>
 
+  <!-- Navegació -->
   <nav class="site-nav">
     <ul>
       <li><a href="index.html">Inici</a></li>
@@ -23,39 +36,105 @@
     </ul>
   </nav>
 
-  <section class="hero" style="background:url('img/pacman.jpg') center/cover no-repeat;">
+  <!-- HERO -->
+  <section class="hero" style="background-image:url('img/pacman.png');">
     <div class="hero-overlay">
       <h2 class="hero-title">Arcade clàssics</h2>
-      <p class="hero-subtitle">Pac-Man, Space Invaders, Street Fighter II…</p>
+      <p class="hero-subtitle">
+        Pac-Man, Space Invaders, Street Fighter II… icones que van marcar generacions.
+      </p>
     </div>
   </section>
 
+  <!-- Contingut -->
   <main class="content">
+
+    <!-- DESPLEGABLES -->
+    <ul class="link-list">
+
+      <li class="dropdown-item">
+        <a class="link-badge toggle-info">Naixement de les arcades</a>
+        <div class="info-box">
+          <p>
+            Als anys 70 i 80, les sales arcade van esdevenir el centre neuràlgic del videojoc. 
+            Eren espais plens de llums, sons electrònics i màquines que captivaven jugadors de totes les edats. 
+            Títols com <strong>Pong</strong>, <strong>Space Invaders</strong> i <strong>Pac-Man</strong> 
+            van marcar el naixement d’una nova cultura digital i van establir les bases del videojoc modern.
+          </p>
+        </div>
+      </li>
+
+      <li class="dropdown-item">
+        <a class="link-badge toggle-info">Competitivitat i comunitat</a>
+        <div class="info-box">
+          <p>
+            Les arcades no eren només llocs per jugar: eren espais socials.  
+            Les puntuacions altes es convertien en reptes personals i símbols d’estatus.  
+            Amb l’arribada de <strong>Street Fighter II</strong>, les màquines de lluita van impulsar tornejos improvisats, 
+            rivalitats mítiques i una comunitat competitiva que encara perdura.
+          </p>
+        </div>
+      </li>
+
+      <li class="dropdown-item">
+        <a class="link-badge toggle-info">Declivi i llegat</a>
+        <div class="info-box">
+          <p>
+            L’arribada de consoles domèstiques cada vegada més potents va reduir la presència de les sales arcade.  
+            Tot i això, el seu llegat continua viu en la cultura retro, en els esports electrònics i en els salons recreatius moderns, 
+            que mantenen viva l’essència d’aquella època daurada.
+          </p>
+        </div>
+      </li>
+
+    </ul>
+
+    <!-- ARTICLE -->
     <article>
       <h3>Història de les sales arcade</h3>
       <p>
-        Als anys 70 i 80, les màquines arcade van ser el centre de la cultura del videojoc. 
-        Les sales recreatives eren punts de trobada on jugadors competien per batre rècords 
-        i gaudir de títols com Pac-Man, Donkey Kong o Galaga.
+        Durant les dècades dels 70 i 80, les màquines arcade van ser el centre de la cultura del videojoc. 
+        Les sales recreatives eren punts de trobada on jugadors competien per batre rècords i gaudir de títols 
+        que avui són autèntiques icones: <strong>Pac-Man</strong>, <strong>Donkey Kong</strong>, <strong>Galaga</strong> i molts més.
       </p>
       <p>
-        Als 90, amb Street Fighter II i Mortal Kombat, les arcades van viure una segona 
-        joventut, convertint-se en espais de competició i socialització.
+        Als anys 90, amb l’arribada de jocs de lluita com <strong>Street Fighter II</strong> i <strong>Mortal Kombat</strong>, 
+        les arcades van viure una segona joventut. Aquestes màquines van convertir-se en espais de competició, 
+        socialització i cultura urbana.
       </p>
     </article>
 
+    <!-- GALERIA -->
     <section class="gallery">
       <h3>Exemples icònics</h3>
+
       <div class="grid">
-        <figure class="card"><img src="img/pacman.jpg" alt="Pac-Man"><figcaption>Pac-Man (1980)</figcaption></figure>
-        <figure class="card"><img src="img/spaceinvaders.jpg" alt="Space Invaders"><figcaption>Space Invaders (1978)</figcaption></figure>
-        <figure class="card"><img src="img/streetfighter.jpg" alt="Street Fighter II"><figcaption>Street Fighter II (1991)</figcaption></figure>
+        <figure class="card">
+          <img src="img/pacman.png" loading="lazy" alt="Pac-Man">
+          <figcaption>Pac-Man (1980)</figcaption>
+        </figure>
+
+        <figure class="card">
+          <img src="img/spaceinvaders.jpg" loading="lazy" alt="Space Invaders">
+          <figcaption>Space Invaders (1978)</figcaption>
+        </figure>
+
+        <figure class="card">
+          <img src="img/streetfighter.jpeg" loading="lazy" alt="Street Fighter II">
+          <figcaption>Street Fighter II (1991)</figcaption>
+        </figure>
       </div>
     </section>
+
   </main>
 
+  <!-- Peu de pàgina -->
   <footer class="site-footer">
     <p>© 2025 — Videojocs Retro</p>
   </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
 </body>
 </html>

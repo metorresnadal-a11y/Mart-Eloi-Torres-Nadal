@@ -2,17 +2,27 @@
 <html lang="ca">
 <head>
   <meta charset="utf-8">
-  <title>Cartutxos Retro</title>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RetroGames — Cartutxos</title>
+
   <link rel="stylesheet" href="styles.css">
+
+  <meta name="description" content="Els cartutxos retro: del pioner Atari 2600 fins a la NES i la Super Nintendo.">
 </head>
+
 <body>
+
+  <!-- Capa de personatges retro -->
+  <div id="retro-characters-layer"></div>
+
+  <!-- Capçalera -->
   <header class="site-header">
     <div class="logo">RETRO<span>GAMES</span></div>
     <h1 class="site-title">Cartutxos Retro</h1>
     <p class="site-tagline">El cor físic dels videojocs clàssics.</p>
   </header>
 
+  <!-- Navegació -->
   <nav class="site-nav">
     <ul>
       <li><a href="index.html">Inici</a></li>
@@ -24,14 +34,59 @@
     </ul>
   </nav>
 
-  <section class="hero" style="background:url('img/cartutxos.jpg') center/cover no-repeat;">
+  <!-- HERO -->
+  <section class="hero" style="background-image:url('img/cartutxos.jpeg');">
     <div class="hero-overlay">
       <h2 class="hero-title">Cartutxos clàssics</h2>
       <p class="hero-subtitle">De l’Atari fins a la Super Nintendo.</p>
     </div>
   </section>
 
+  <!-- Contingut -->
   <main class="content">
+
+    <!-- DESPLEGABLES -->
+    <ul class="link-list">
+
+      <li class="dropdown-item">
+        <a class="link-badge toggle-info">Història dels cartutxos</a>
+        <div class="info-box">
+          <p>
+            Els cartutxos van ser el format físic predominant durant les dècades dels 70, 80 i 90. 
+            Permetien inserir fàcilment nous jocs i van marcar una generació amb el seu disseny robust 
+            i etiquetes acolorides. L’Atari 2600 va popularitzar el sistema, mentre que Nintendo el va 
+            perfeccionar amb la NES i la Super Nintendo, convertint-lo en un estàndard mundial.
+          </p>
+        </div>
+      </li>
+
+      <li class="dropdown-item">
+        <a class="link-badge toggle-info">Tecnologia</a>
+        <div class="info-box">
+          <p>
+            A l’interior d’un cartutx hi havia molt més que un simple xip ROM. 
+            Alguns models incorporaven coprocesadors especials que ampliaven la potència de la consola. 
+            Exemples destacats inclouen el <strong>SuperFX</strong> (Star Fox), que permetia gràfics 3D primitius, 
+            o el <strong>SA-1</strong> (Mario RPG), que accelerava càlculs i millorava el rendiment general.
+          </p>
+        </div>
+      </li>
+
+      <li class="dropdown-item">
+        <a class="link-badge toggle-info">Col·leccionisme</a>
+        <div class="info-box">
+          <p>
+            Avui dia, els cartutxos retro són peces molt valorades entre col·leccionistes. 
+            Els exemplars rars, especialment els que conserven caixa i manual originals, 
+            poden assolir preus molt elevats. La seva durabilitat i el seu valor històric 
+            els converteixen en objectes de culte.
+          </p>
+        </div>
+      </li>
+
+    </ul>
+
+    <!-- ARTICLE -->
     <article>
       <h3>Història dels cartutxos</h3>
       <p>
@@ -40,33 +95,43 @@
         generació amb el seu disseny robust i les seves etiquetes acolorides.
       </p>
       <p>
-        Atari 2600 va popularitzar el sistema, i més tard Nintendo amb la NES i la SNES va 
+        L’Atari 2600 va popularitzar el sistema, i més tard Nintendo amb la NES i la SNES va 
         perfeccionar el format. Els cartutxos no només contenien el joc, sinó que sovint 
-        incorporaven xips especials per millorar el rendiment.
+        incorporaven xips especials per millorar el rendiment i ampliar les capacitats de la consola.
       </p>
     </article>
 
+    <!-- GALERIA -->
     <section class="gallery">
       <h3>Exemples icònics</h3>
+
       <div class="grid">
         <figure class="card">
-          <img src="img/atari2600.jpg" alt="Cartutx Atari 2600" />
+          <img src="img/atari2600_cart.jpg" loading="lazy" alt="Cartutx Atari 2600">
           <figcaption>Atari 2600 — pioner del format.</figcaption>
         </figure>
+
         <figure class="card">
-          <img src="img/nes_cart.jpg" alt="Cartutx NES" />
+          <img src="img/nes_cart.jpg" loading="lazy" alt="Cartutx NES">
           <figcaption>NES — Super Mario Bros.</figcaption>
         </figure>
+
         <figure class="card">
-          <img src="img/snes_cart.jpg" alt="Cartutx SNES" />
+          <img src="img/snes_cart.jpg" loading="lazy" alt="Cartutx SNES">
           <figcaption>SNES — The Legend of Zelda.</figcaption>
         </figure>
       </div>
     </section>
+
   </main>
 
+  <!-- Peu de pàgina -->
   <footer class="site-footer">
     <p>© 2025 — Videojocs Retro</p>
   </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
 </body>
 </html>

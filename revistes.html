@@ -2,16 +2,29 @@
 <html lang="ca">
 <head>
   <meta charset="utf-8">
-  <title>Revistes Retro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RetroGames — Revistes</title>
+
   <link rel="stylesheet" href="styles.css">
+
+  <meta name="description" content="La premsa especialitzada que va difondre la cultura del videojoc: Nintendo Power, Hobby Consolas, Micromanía.">
 </head>
+
 <body>
+
+  <!-- Capa de personatges retro -->
+  <div id="retro-characters-layer"></div>
+
+  <!-- Capçalera -->
   <header class="site-header">
     <div class="logo">RETRO<span>GAMES</span></div>
     <h1 class="site-title">Revistes Retro</h1>
-    <p class="site-tagline">La premsa especialitzada que va difondre la cultura del videojoc.</p>
+    <p class="site-tagline">
+      La premsa especialitzada que va difondre la cultura del videojoc i va unir generacions de jugadors.
+    </p>
   </header>
 
+  <!-- Navegació -->
   <nav class="site-nav">
     <ul>
       <li><a href="index.html">Inici</a></li>
@@ -23,39 +36,103 @@
     </ul>
   </nav>
 
-  <section class="hero" style="background:url('img/revista1.jpg') center/cover no-repeat;">
+  <!-- HERO -->
+  <section class="hero" style="background-image:url('img/revista1.png');">
     <div class="hero-overlay">
       <h2 class="hero-title">Revistes clàssiques</h2>
-      <p class="hero-subtitle">Nintendo Power, Hobby Consolas, Micromanía…</p>
+      <p class="hero-subtitle">
+        Nintendo Power, Hobby Consolas, Micromanía… icones de la cultura del videojoc.
+      </p>
     </div>
   </section>
 
+  <!-- Contingut -->
   <main class="content">
+
+    <!-- DESPLEGABLES -->
+    <ul class="link-list">
+
+      <li class="dropdown-item">
+        <a class="link-badge toggle-info">Importància històrica</a>
+        <div class="info-box">
+          <p>
+            Abans de l’arribada d’internet, les revistes especialitzades eren la principal font 
+            d’informació per als jugadors. Oferien anàlisis, trucs, mapes, entrevistes i notícies 
+            que mantenien viva la comunitat i alimentaven la passió pel videojoc.
+          </p>
+        </div>
+      </li>
+
+      <li class="dropdown-item">
+        <a class="link-badge toggle-info">Revistes mítiques</a>
+        <div class="info-box">
+          <p>
+            Publicacions com <strong>Nintendo Power</strong>, <strong>Hobby Consolas</strong> i 
+            <strong>Micromanía</strong> van marcar generacions. Les seves portades, reportatges i 
+            seccions especials són avui peces de col·leccionisme molt valorades.
+          </p>
+        </div>
+      </li>
+
+      <li class="dropdown-item">
+        <a class="link-badge toggle-info">Impacte cultural</a>
+        <div class="info-box">
+          <p>
+            Les revistes no només informaven: creaven comunitat, impulsaven sagues, 
+            influïen en la percepció dels videojocs i ajudaven a consolidar la indústria. 
+            Molts jugadors van descobrir els seus títols preferits gràcies a aquestes publicacions.
+          </p>
+        </div>
+      </li>
+
+    </ul>
+
+    <!-- ARTICLE -->
     <article>
       <h3>El paper de les revistes</h3>
       <p>
         Abans d’internet, les revistes especialitzades eren la principal font d’informació 
-        sobre videojocs. Publicaven anàlisis, trucs, mapes i notícies que mantenien viva 
-        la comunitat.
+        sobre videojocs. Publicaven anàlisis, trucs, mapes, entrevistes i notícies que mantenien viva 
+        la comunitat i ajudaven els jugadors a descobrir nous títols.
       </p>
       <p>
         Títols com <strong>Nintendo Power</strong> als EUA o <strong>Hobby Consolas</strong> 
-        a Espanya van marcar generacions, convertint-se en referència per a jugadors i col·leccionistes.
+        a Espanya van marcar generacions, convertint-se en referència per a jugadors i col·leccionistes. 
+        El seu llegat continua viu en la cultura retro actual.
       </p>
     </article>
 
+    <!-- GALERIA -->
     <section class="gallery">
       <h3>Portades icòniques</h3>
+
       <div class="grid">
-        <figure class="card"><img src="img/revista1.jpg" alt="Nintendo Power"><figcaption>Nintendo Power</figcaption></figure>
-        <figure class="card"><img src="img/revista2.jpg" alt="Hobby Consolas"><figcaption>Hobby Consolas</figcaption></figure>
-        <figure class="card"><img src="img/revista3.jpg" alt="Micromanía"><figcaption>Micromanía</figcaption></figure>
+        <figure class="card">
+          <img src="img/revista1.png" loading="lazy" alt="Nintendo Power">
+          <figcaption>Nintendo Power</figcaption>
+        </figure>
+
+        <figure class="card">
+          <img src="img/revista2.jpg" loading="lazy" alt="Hobby Consolas">
+          <figcaption>Hobby Consolas</figcaption>
+        </figure>
+
+        <figure class="card">
+          <img src="img/revista3.jpg" loading="lazy" alt="Micromanía">
+          <figcaption>Micromanía</figcaption>
+        </figure>
       </div>
     </section>
+
   </main>
 
+  <!-- Peu de pàgina -->
   <footer class="site-footer">
     <p>© 2025 — Videojocs Retro</p>
   </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
 </body>
 </html>
